@@ -1,0 +1,521 @@
+{
+  "en": {
+    "nav": {
+      "services": "Services",
+      "whoWeAre": "Who We Are",
+      "testimonials": "Testimonials",
+      "questions": "Questions",
+      "freeConsultation": "Free Consultation",
+      "contact": "Contact",
+      "language": "Language",
+      "whatsapp": "WhatsApp",
+      "languageOptions": [
+        { "value": "en", "label": "English" },
+        { "value": "ar", "label": "Arabic" },
+        { "value": "fr", "label": "French" }
+      ]
+    },
+    "hero": {
+      "title": "Immigration Lawyer to Brazil - Visas, Residency & Citizenship",
+      "subtitle": "We help you live legally and safely in Brazil - fast, secure, and without complications.",
+      "ctaPrimary": "Get Your Free Legal Consultation Now",
+      "ctaWhatsapp": "Chat With Us Instantly on WhatsApp",
+      "highlights": [
+        "Licensed Brazilian Attorney (OAB/PR 58.420)",
+        "Specialized in Immigration & Foreign Nationals Law",
+        "Multilingual support: English, Arabic, Portuguese",
+        "Fast response within minutes - 100% confidential consultation"
+      ],
+      "formTitle": "Request your free legal consultation",
+      "formDescription": "Share your case and open a WhatsApp conversation with your details already prepared.",
+      "formButton": "Get legal assistance"
+    },
+    "who": {
+      "label": "Meet Your Immigration Lawyer",
+      "title": "Meet Your Immigration Lawyer",
+      "lead": "Erica Montarini Gaspani is a licensed Brazilian attorney specialized in Immigration and Foreign Nationals Law.",
+      "paragraph": "She provides full legal support to individuals, families, and companies in visa applications, residency permits, citizenship processes, and legal regularization before Brazilian federal authorities.",
+      "items": [
+        "Direct communication with your lawyer",
+        "Personalized case evaluation",
+        "Full confidentiality and professionalism"
+      ],
+      "name": "Erica Montarini Gaspani",
+      "role": "Immigration Lawyer to Brazil",
+      "cta": "Speak With a Specialized Lawyer for Free"
+    },
+    "servicesSection": {
+      "label": "How Can We Help You?",
+      "title": "How Can We Help You?",
+      "cta": "Get a Free Evaluation of Your Case",
+      "modal": {
+        "viewDetails": "View details",
+        "details": "Service Details",
+        "book": "Book This Service",
+        "close": "Close service details"
+      }
+    },
+    "services": [
+      {
+        "id": "service-visas-residency",
+        "title": "Brazilian Visas & Residency",
+        "description": "All types of visas and residence permits (tourist, work, family reunification, and more).",
+        "modalTitle": "Brazilian Visas & Residency",
+        "modalText": "We guide clients through the entire visa and residency process, from identifying the right legal route to preparing the paperwork and following the case through federal authorities.",
+        "bullets": [
+          "Tourist, work, family reunification, and temporary residence support",
+          "Document review and legal strategy before filing",
+          "Application follow-up and guidance through every step"
+        ]
+      },
+      {
+        "id": "service-citizenship",
+        "title": "Brazilian Citizenship",
+        "description": "Full assistance throughout the citizenship process.",
+        "modalTitle": "Brazilian Citizenship",
+        "modalText": "We support citizenship cases with legal analysis, document preparation, and strategic guidance for each stage.",
+        "bullets": [
+          "Eligibility review and legal assessment",
+          "Document organization and filing support",
+          "Follow-up until the process is resolved"
+        ]
+      },
+      {
+        "id": "service-refuge-asylum",
+        "title": "Refuge, Asylum & Protection",
+        "description": "Legal support for asylum and temporary residence.",
+        "modalTitle": "Refuge, Asylum & Protection",
+        "modalText": "We provide confidential legal support for humanitarian protection cases, including asylum and temporary residence pathways.",
+        "bullets": [
+          "Initial case evaluation and protection route analysis",
+          "Assistance with supporting documents and submissions",
+          "Confidential legal support throughout the process"
+        ]
+      },
+      {
+        "id": "service-defense-procedures",
+        "title": "Legal Defense & Administrative Procedures",
+        "description": "Appeals, deportation defense, and legal status regularization.",
+        "modalTitle": "Legal Defense & Administrative Procedures",
+        "modalText": "We assist with administrative challenges and legal defense matters affecting your status in Brazil.",
+        "bullets": [
+          "Administrative appeals and procedural responses",
+          "Deportation defense and status regularization",
+          "Direct legal guidance focused on the safest path forward"
+        ]
+      }
+    ],
+    "testimonialsSection": {
+      "label": "What Our Clients Say",
+      "title": "What Our Clients Say",
+      "cta": "Start Your Free Consultation Now",
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "testimonials": [
+      { "title": "Ahmed, Iraq", "quote": "Erica helped me obtain my residency quickly and without stress." },
+      { "title": "Mohammed, UAE", "quote": "Very professional service and clear guidance throughout the process." },
+      { "title": "Fatima, Morocco", "quote": "The process was clear from day one, and every document step was handled with precision." },
+      { "title": "Daniel, Canada", "quote": "I felt supported at every stage, and my residency case moved forward faster than expected." },
+      { "title": "Nour, Lebanon", "quote": "Professional, responsive, and genuinely caring legal support for my family reunification process." }
+    ],
+    "bureaucracy": {
+      "label": "We take care of everything",
+      "title": "Don't Worry About the Bureaucracy - We Take Care of Everything",
+      "lead": "We guide you through every legal step so you can live and work in Brazil without stress.",
+      "items": [
+        "CPF (Tax ID) registration",
+        "RNM (Migration Registry)",
+        "Driver's License (CNH)",
+        "Federal Police registration",
+        "Full document preparation"
+      ],
+      "cta": "Start Your Legal Process Today - Free Consultation"
+    },
+    "faqSection": {
+      "label": "Questions/answers:",
+      "title": "MORE THAN VISAS: COMPLETE LEGAL ADVISORY SERVICES IN BRAZIL WITH EXPERIENCED LAWYERS",
+      "subtitle": "We take care of everything for you, with the trust and experience of trilingual Brazilian lawyers.",
+      "cta": "Ask About Your Case Now"
+    },
+    "faqs": [
+      {
+        "question": "I entered Brazil as a visitor. Can I extend my stay with the Federal Police?",
+        "paragraphs": [
+          "It depends.",
+          "For some nationalities, based on reciprocity, an extension is allowed. Documents may include proof of subsistence, invitation letter, airline ticket, application form, and service fee payment."
+        ]
+      },
+      {
+        "question": "What is the time frame to use the visa?",
+        "paragraphs": [
+          "The visa validity period is the period during which the visa may be used for entry into Brazil.",
+          "Visa validity is different from residence authorization period after registration with the Federal Police."
+        ],
+        "bullets": [
+          "Visitor Visa: usually 1 year, multiple entries while valid",
+          "Temporary Visa: up to 1 year, multiple entries while valid"
+        ]
+      },
+      {
+        "question": "My address has changed. What should I do?",
+        "paragraphs": [
+          "Foreign residents must keep information updated with the Federal Police Migration Department."
+        ]
+      },
+      {
+        "question": "My passport is expiring. Can I still have the Brazilian visa issued in it?",
+        "paragraphs": [
+          "To issue a visa, the passport should have at least 6 months validity and blank pages."
+        ]
+      },
+      {
+        "question": "Who can I bring to Brazil through family reunification?",
+        "paragraphs": [
+          "Family reunification may include spouse/partner, children and other relatives under legal conditions."
+        ]
+      }
+    ],
+    "finalCta": {
+      "label": "Don't Delay Your Future - Start Today",
+      "title": "Don't Delay Your Future - Start Today",
+      "text": "Get trusted legal guidance and begin your life in Brazil with confidence.",
+      "primary": "Get Your Free Legal Consultation Now",
+      "whatsapp": "Chat With Us Instantly on WhatsApp",
+      "highlights": ["No obligation", "Fast response", "100% confidential"]
+    },
+    "reservation": {
+      "formTitle": "Request your free legal consultation",
+      "formDescription": "Share your case and open a WhatsApp conversation with your details already prepared.",
+      "formButton": "Get legal assistance"
+    },
+    "footer": {
+      "about": "Erica Montarini Gaspani ADVOGADOS ASSOCIADOS is a law firm operating in various areas of law, with a primary focus on IMMIGRATION LAW.",
+      "contactsTitle": "Contacts",
+      "formTitle": "Contact us",
+      "formButton": "Book a consultation"
+    },
+    "forms": {
+      "fullName": "Full name",
+      "phone": "Phone",
+      "email": "Email",
+      "message": "Message",
+      "fullNamePlaceholder": "Your full name",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "emailPlaceholder": "you@example.com",
+      "messagePlaceholder": "Tell us briefly about your situation.",
+      "footerName": "Full Name",
+      "footerPhone": "Phone",
+      "footerEmail": "Email",
+      "footerMessage": "Message"
+    }
+  },
+  "ar": {
+    "nav": {
+      "services": "الخدمات",
+      "whoWeAre": "من نحن",
+      "testimonials": "آراء العملاء",
+      "questions": "الأسئلة",
+      "freeConsultation": "استشارة مجانية",
+      "contact": "تواصل",
+      "language": "اللغة",
+      "whatsapp": "واتساب",
+      "languageOptions": [
+        { "value": "en", "label": "الإنجليزية" },
+        { "value": "ar", "label": "العربية" },
+        { "value": "fr", "label": "الفرنسية" }
+      ]
+    },
+    "hero": {
+      "title": "محامية هجرة إلى البرازيل - التأشيرات والإقامة والجنسية",
+      "subtitle": "نساعدك على العيش في البرازيل بشكل قانوني وآمن بسرعة وبدون تعقيدات.",
+      "ctaPrimary": "احصل على استشارة قانونية مجانية الآن",
+      "ctaWhatsapp": "تواصل معنا فوراً عبر واتساب",
+      "highlights": [
+        "محامية برازيلية مرخصة (OAB/PR 58.420)",
+        "متخصصة في قانون الهجرة وشؤون الأجانب",
+        "دعم متعدد اللغات: الإنجليزية، العربية، البرتغالية",
+        "رد سريع خلال دقائق - استشارة سرية 100%"
+      ],
+      "formTitle": "اطلب استشارتك القانونية المجانية",
+      "formDescription": "شارك تفاصيل حالتك وسنجهز رسالة واتساب مباشرة.",
+      "formButton": "احصل على المساعدة القانونية"
+    },
+    "who": {
+      "label": "تعرّف على محامية الهجرة",
+      "title": "تعرّف على محامية الهجرة",
+      "lead": "إريكا مونتاريني جاسباني محامية برازيلية مرخصة ومتخصصة في الهجرة وشؤون الأجانب.",
+      "paragraph": "تقدم دعماً قانونياً كاملاً للأفراد والعائلات والشركات في التأشيرات والإقامات والجنسية وتسوية الأوضاع القانونية.",
+      "items": ["تواصل مباشر مع المحامية", "تقييم شخصي للحالة", "سرية ومهنية كاملة"],
+      "name": "إريكا مونتاريني جاسباني",
+      "role": "محامية هجرة إلى البرازيل",
+      "cta": "تحدث مع محامية متخصصة مجاناً"
+    },
+    "servicesSection": {
+      "label": "كيف يمكننا مساعدتك؟",
+      "title": "كيف يمكننا مساعدتك؟",
+      "cta": "احصل على تقييم مجاني لحالتك",
+      "modal": {
+        "viewDetails": "عرض التفاصيل",
+        "details": "تفاصيل الخدمة",
+        "book": "احجز هذه الخدمة",
+        "close": "إغلاق تفاصيل الخدمة"
+      }
+    },
+    "services": [
+      {
+        "id": "service-visas-residency",
+        "title": "تأشيرات وإقامة البرازيل",
+        "description": "جميع أنواع التأشيرات وتصاريح الإقامة (سياحة، عمل، لمّ شمل عائلي وغيرها).",
+        "modalTitle": "تأشيرات وإقامة البرازيل",
+        "modalText": "نرشدك خلال كامل العملية من اختيار المسار القانوني المناسب حتى تقديم الملف والمتابعة.",
+        "bullets": ["دعم لتأشيرات السياحة والعمل ولمّ الشمل", "مراجعة المستندات والاستراتيجية القانونية", "متابعة الطلب خطوة بخطوة"]
+      },
+      {
+        "id": "service-citizenship",
+        "title": "الجنسية البرازيلية",
+        "description": "مساعدة كاملة طوال إجراءات الجنسية.",
+        "modalTitle": "الجنسية البرازيلية",
+        "modalText": "ندعم ملفات الجنسية بالتقييم القانوني وإعداد المستندات والمتابعة.",
+        "bullets": ["مراجعة الأهلية", "تنظيم المستندات", "متابعة حتى إنهاء الإجراء"]
+      },
+      {
+        "id": "service-refuge-asylum",
+        "title": "اللجوء والحماية",
+        "description": "دعم قانوني لطلبات اللجوء والإقامة المؤقتة.",
+        "modalTitle": "اللجوء والحماية",
+        "modalText": "نقدم دعماً قانونياً سرياً في قضايا الحماية الإنسانية والإقامة المؤقتة.",
+        "bullets": ["تقييم أولي للحالة", "المساعدة في المستندات", "متابعة قانونية مستمرة"]
+      },
+      {
+        "id": "service-defense-procedures",
+        "title": "الدفاع القانوني والإجراءات الإدارية",
+        "description": "الطعون، والدفاع ضد الترحيل، وتسوية الوضع القانوني.",
+        "modalTitle": "الدفاع القانوني والإجراءات الإدارية",
+        "modalText": "نساعد في التحديات الإدارية والقانونية المتعلقة بوضعك في البرازيل.",
+        "bullets": ["طعون إدارية", "الدفاع ضد الترحيل", "إرشاد قانوني مباشر"]
+      }
+    ],
+    "testimonialsSection": {
+      "label": "ماذا يقول عملاؤنا",
+      "title": "ماذا يقول عملاؤنا",
+      "cta": "ابدأ استشارتك المجانية الآن",
+      "prev": "السابق",
+      "next": "التالي"
+    },
+    "testimonials": [
+      { "title": "أحمد، العراق", "quote": "ساعدتني إريكا في الحصول على الإقامة بسرعة وبدون ضغط." },
+      { "title": "محمد، الإمارات", "quote": "خدمة احترافية جداً وتوجيه واضح طوال العملية." },
+      { "title": "فاطمة، المغرب", "quote": "كانت الإجراءات واضحة من البداية وتم التعامل بدقة مع كل مستند." },
+      { "title": "دانيال، كندا", "quote": "شعرت بالدعم في كل مرحلة وتقدمت قضيتي أسرع مما توقعت." },
+      { "title": "نور، لبنان", "quote": "دعم قانوني محترف وسريع الاستجابة لملف لمّ الشمل." }
+    ],
+    "bureaucracy": {
+      "label": "نحن نتكفل بكل شيء",
+      "title": "لا تقلق بشأن البيروقراطية - نحن نتولى كل شيء",
+      "lead": "نوجّهك في كل خطوة قانونية لتعيش وتعمل في البرازيل بدون توتر.",
+      "items": ["تسجيل CPF", "سجل الهجرة RNM", "رخصة القيادة CNH", "تسجيل الشرطة الفيدرالية", "إعداد كامل المستندات"],
+      "cta": "ابدأ إجراءاتك القانونية اليوم - استشارة مجانية"
+    },
+    "faqSection": {
+      "label": "أسئلة/أجوبة:",
+      "title": "أكثر من التأشيرات: استشارات قانونية متكاملة في البرازيل مع محامين ذوي خبرة",
+      "subtitle": "نعتني بكل شيء من أجلك بثقة وخبرة محامين برازيليين متعددي اللغات.",
+      "cta": "اسأل عن حالتك الآن"
+    },
+    "faqs": [
+      { "question": "دخلت البرازيل كزائر. هل يمكنني تمديد إقامتي؟", "paragraphs": ["يعتمد ذلك على الجنسية وظروف الحالة."] },
+      { "question": "ما الفرق بين التأشيرة والإقامة؟", "paragraphs": ["التأشيرة للدخول، والإقامة للبقاء القانوني."] },
+      { "question": "عنواني تغيّر، ماذا أفعل؟", "paragraphs": ["يجب تحديث البيانات لدى شرطة الهجرة الفيدرالية."] },
+      { "question": "جواز سفري أوشك على الانتهاء، هل يمكن إصدار التأشيرة؟", "paragraphs": ["يجب أن تكون صلاحية الجواز 6 أشهر على الأقل."] },
+      { "question": "من يمكنني إحضاره عبر لمّ الشمل؟", "paragraphs": ["الزوج/الزوجة، الأبناء، وبعض الأقارب حسب الشروط القانونية."] }
+    ],
+    "finalCta": {
+      "label": "لا تؤجل مستقبلك - ابدأ اليوم",
+      "title": "لا تؤجل مستقبلك - ابدأ اليوم",
+      "text": "احصل على توجيه قانوني موثوق وابدأ حياتك في البرازيل بثقة.",
+      "primary": "احصل على استشارتك القانونية المجانية الآن",
+      "whatsapp": "تواصل معنا فوراً عبر واتساب",
+      "highlights": ["بدون التزام", "رد سريع", "سرية 100%"]
+    },
+    "reservation": {
+      "formTitle": "اطلب استشارتك القانونية المجانية",
+      "formDescription": "شارك تفاصيل حالتك وسنجهز رسالة واتساب مباشرة.",
+      "formButton": "احصل على المساعدة القانونية"
+    },
+    "footer": {
+      "about": "إريكا مونتاريني جاسباني للمحاماة مكتب يعمل في مجالات قانونية متعددة مع تركيز أساسي على قانون الهجرة.",
+      "contactsTitle": "التواصل",
+      "formTitle": "تواصل معنا",
+      "formButton": "احجز استشارة"
+    },
+    "forms": {
+      "fullName": "الاسم الكامل",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "message": "الرسالة",
+      "fullNamePlaceholder": "اسمك الكامل",
+      "phonePlaceholder": "+55 11 99999-9999",
+      "emailPlaceholder": "you@example.com",
+      "messagePlaceholder": "اكتب لنا باختصار عن حالتك.",
+      "footerName": "الاسم الكامل",
+      "footerPhone": "الهاتف",
+      "footerEmail": "البريد الإلكتروني",
+      "footerMessage": "الرسالة"
+    }
+  },
+  "fr": {
+    "nav": {
+      "services": "Services",
+      "whoWeAre": "Qui sommes-nous",
+      "testimonials": "Témoignages",
+      "questions": "Questions",
+      "freeConsultation": "Consultation gratuite",
+      "contact": "Contact",
+      "language": "Langue",
+      "whatsapp": "WhatsApp",
+      "languageOptions": [
+        { "value": "en", "label": "Anglais" },
+        { "value": "ar", "label": "Arabe" },
+        { "value": "fr", "label": "Français" }
+      ]
+    },
+    "hero": {
+      "title": "Avocate en immigration au Brésil - Visas, Résidence et Citoyenneté",
+      "subtitle": "Nous vous aidons à vivre légalement et en sécurité au Brésil, rapidement et sans complications.",
+      "ctaPrimary": "Obtenez votre consultation juridique gratuite",
+      "ctaWhatsapp": "Discutez avec nous sur WhatsApp",
+      "highlights": [
+        "Avocate brésilienne agréée (OAB/PR 58.420)",
+        "Spécialisée en immigration et droit des étrangers",
+        "Support multilingue : anglais, arabe, portugais",
+        "Réponse rapide en quelques minutes - consultation 100% confidentielle"
+      ],
+      "formTitle": "Demandez votre consultation juridique gratuite",
+      "formDescription": "Partagez votre dossier et ouvrez une conversation WhatsApp déjà préparée.",
+      "formButton": "Obtenir une assistance juridique"
+    },
+    "who": {
+      "label": "Rencontrez votre avocate en immigration",
+      "title": "Rencontrez votre avocate en immigration",
+      "lead": "Erica Montarini Gaspani est une avocate brésilienne agréée, spécialisée en immigration.",
+      "paragraph": "Elle fournit un accompagnement juridique complet pour les visas, permis de résidence, citoyenneté et régularisation.",
+      "items": ["Communication directe avec votre avocate", "Évaluation personnalisée", "Confidentialité et professionnalisme"],
+      "name": "Erica Montarini Gaspani",
+      "role": "Avocate en immigration au Brésil",
+      "cta": "Parlez gratuitement avec une avocate spécialisée"
+    },
+    "servicesSection": {
+      "label": "Comment pouvons-nous vous aider ?",
+      "title": "Comment pouvons-nous vous aider ?",
+      "cta": "Obtenez une évaluation gratuite de votre dossier",
+      "modal": {
+        "viewDetails": "Voir les détails",
+        "details": "Détails du service",
+        "book": "Réserver ce service",
+        "close": "Fermer les détails du service"
+      }
+    },
+    "services": [
+      {
+        "id": "service-visas-residency",
+        "title": "Visas et Résidence au Brésil",
+        "description": "Tous types de visas et permis de résidence (tourisme, travail, regroupement familial, etc.).",
+        "modalTitle": "Visas et Résidence au Brésil",
+        "modalText": "Nous vous accompagnons sur tout le processus, du choix de la voie juridique au suivi du dossier.",
+        "bullets": ["Support visas tourisme/travail/famille", "Revue des documents", "Suivi complet du dossier"]
+      },
+      {
+        "id": "service-citizenship",
+        "title": "Citoyenneté brésilienne",
+        "description": "Assistance complète tout au long du processus.",
+        "modalTitle": "Citoyenneté brésilienne",
+        "modalText": "Nous assistons les demandes de citoyenneté avec une stratégie claire et un suivi rigoureux.",
+        "bullets": ["Analyse d'éligibilité", "Préparation du dossier", "Suivi jusqu'à la décision"]
+      },
+      {
+        "id": "service-refuge-asylum",
+        "title": "Refuge, Asile et Protection",
+        "description": "Support juridique pour l'asile et la résidence temporaire.",
+        "modalTitle": "Refuge, Asile et Protection",
+        "modalText": "Accompagnement juridique confidentiel pour les voies de protection humanitaire.",
+        "bullets": ["Évaluation initiale", "Assistance documentaire", "Accompagnement continu"]
+      },
+      {
+        "id": "service-defense-procedures",
+        "title": "Défense juridique et procédures administratives",
+        "description": "Recours, défense contre l'expulsion et régularisation du statut.",
+        "modalTitle": "Défense juridique et procédures administratives",
+        "modalText": "Nous aidons à résoudre les questions administratives et de défense affectant votre statut au Brésil.",
+        "bullets": ["Recours administratifs", "Défense contre l'expulsion", "Orientation juridique directe"]
+      }
+    ],
+    "testimonialsSection": {
+      "label": "Ce que disent nos clients",
+      "title": "Ce que disent nos clients",
+      "cta": "Commencez votre consultation gratuite maintenant",
+      "prev": "Précédent",
+      "next": "Suivant"
+    },
+    "testimonials": [
+      { "title": "Ahmed, Irak", "quote": "Erica m'a aidé à obtenir ma résidence rapidement et sans stress." },
+      { "title": "Mohammed, EAU", "quote": "Service très professionnel et conseils clairs durant tout le processus." },
+      { "title": "Fatima, Maroc", "quote": "Le processus était clair dès le premier jour et chaque étape documentaire a été bien gérée." },
+      { "title": "Daniel, Canada", "quote": "Je me suis senti soutenu à chaque étape et mon dossier a avancé plus vite que prévu." },
+      { "title": "Nour, Liban", "quote": "Accompagnement juridique professionnel, réactif et humain." }
+    ],
+    "bureaucracy": {
+      "label": "Nous nous occupons de tout",
+      "title": "Ne vous inquiétez pas de la bureaucratie - Nous gérons tout",
+      "lead": "Nous vous guidons à chaque étape juridique pour vivre et travailler au Brésil sans stress.",
+      "items": ["Enregistrement CPF", "RNM (registre migratoire)", "Permis de conduire (CNH)", "Enregistrement Police fédérale", "Préparation complète des documents"],
+      "cta": "Commencez votre procédure juridique aujourd'hui"
+    },
+    "faqSection": {
+      "label": "Questions/réponses :",
+      "title": "PLUS QUE DES VISAS : CONSEIL JURIDIQUE COMPLET AU BRÉSIL AVEC DES AVOCATS EXPÉRIMENTÉS",
+      "subtitle": "Nous nous occupons de tout avec confiance et expérience.",
+      "cta": "Posez votre question maintenant"
+    },
+    "faqs": [
+      { "question": "Je suis entré au Brésil comme visiteur. Puis-je prolonger mon séjour ?", "paragraphs": ["Cela dépend de votre nationalité et de votre dossier."] },
+      { "question": "Quelle est la durée d'utilisation d'un visa ?", "paragraphs": ["La validité du visa est la période durant laquelle il peut être utilisé pour entrer au Brésil."] },
+      { "question": "Mon adresse a changé. Que dois-je faire ?", "paragraphs": ["Vous devez mettre à jour vos informations auprès de la Police fédérale."] },
+      { "question": "Mon passeport expire bientôt. Puis-je obtenir le visa ?", "paragraphs": ["Le passeport doit être valide au moins 6 mois."] },
+      { "question": "Qui puis-je faire venir au Brésil via regroupement familial ?", "paragraphs": ["Époux(se), enfants et autres proches selon les conditions légales."] }
+    ],
+    "finalCta": {
+      "label": "N'attendez pas votre avenir - Commencez aujourd'hui",
+      "title": "N'attendez pas votre avenir - Commencez aujourd'hui",
+      "text": "Obtenez une orientation juridique fiable et commencez votre vie au Brésil en confiance.",
+      "primary": "Obtenez votre consultation juridique gratuite",
+      "whatsapp": "Discutez avec nous sur WhatsApp",
+      "highlights": ["Sans obligation", "Réponse rapide", "100% confidentiel"]
+    },
+    "reservation": {
+      "formTitle": "Demandez votre consultation juridique gratuite",
+      "formDescription": "Partagez votre dossier et ouvrez une conversation WhatsApp déjà préparée.",
+      "formButton": "Obtenir une assistance juridique"
+    },
+    "footer": {
+      "about": "Erica Montarini Gaspani ADVOGADOS ASSOCIADOS est un cabinet actif dans plusieurs domaines du droit, avec un focus principal sur l'immigration.",
+      "contactsTitle": "Contacts",
+      "formTitle": "Contactez-nous",
+      "formButton": "Réserver une consultation"
+    },
+    "forms": {
+      "fullName": "Nom complet",
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "message": "Message",
+      "fullNamePlaceholder": "Votre nom complet",
+      "phonePlaceholder": "+33 6 12 34 56 78",
+      "emailPlaceholder": "you@example.com",
+      "messagePlaceholder": "Décrivez brièvement votre situation.",
+      "footerName": "Nom complet",
+      "footerPhone": "Téléphone",
+      "footerEmail": "E-mail",
+      "footerMessage": "Message"
+    }
+  }
+}
