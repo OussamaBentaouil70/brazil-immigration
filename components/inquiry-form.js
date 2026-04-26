@@ -9,7 +9,7 @@ import { useTranslation } from "./translation-context";
 import WhatsAppButton from "./whatsapp-button";
 
 const WHATSAPP_NUMBER = "5544991065886";
-const PHP_BACKEND_URL = "http://localhost/brazil-immigration/send-mail.php";
+const PHP_BACKEND_URL = process.env.NEXT_PUBLIC_PHP_BACKEND_URL || "/send-mail.php";
 
 export default function InquiryForm({
   title,
@@ -62,7 +62,7 @@ export default function InquiryForm({
         });
 
         if (response.ok) {
-          const thankYouUrl = locale === "en" ? "/thank-you" : `/${locale}/thank-you`;
+          const thankYouUrl = `/${locale}/thank-you`;
           router.push(thankYouUrl);
         } else {
           setFeedback("Something went wrong. Please try again or contact us via WhatsApp.");
