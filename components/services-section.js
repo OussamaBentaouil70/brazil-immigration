@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 function CloseIcon() {
   return (
@@ -12,24 +13,79 @@ function CloseIcon() {
 
 export default function ServicesSection({ services }) {
   const [activeService, setActiveService] = useState(null);
+  const [isMounted, setIsMounted] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   useEffect(() => {
     function onKeyDown(event) {
       if (event.key === "Escape") {
-        setActiveService(null);
+        handleClose();
       }
     }
 
     if (activeService) {
       document.body.style.overflow = "hidden";
       window.addEventListener("keydown", onKeyDown);
-    }
-
-    return () => {
+      // Small delay to trigger animation
+      const timer = setTimeout(() => setIsVisible(true), 10);
+      return () => {
+        clearTimeout(timer);
+        window.removeEventListener("keydown", onKeyDown);
+      };
+    } else {
       document.body.style.overflow = "";
-      window.removeEventListener("keydown", onKeyDown);
-    };
+    }
   }, [activeService]);
+
+  const handleClose = () => {
+    setIsVisible(false);
+    setTimeout(() => {
+      setActiveService(null);
+    }, 300); // Match CSS transition duration
+  };
+
+  const modalContent = activeService && (
+    <div 
+      className={`service-modal ${isVisible ? "is-visible" : ""}`} 
+      role="presentation" 
+      onClick={handleClose}
+    >
+      <div
+        aria-modal="true"
+        className="service-modal__panel"
+        onClick={(event) => event.stopPropagation()}
+        role="dialog"
+        tabIndex={-1}
+      >
+        <button
+          aria-label="Close"
+          className="service-modal__close"
+          onClick={handleClose}
+          type="button"
+        >
+          <CloseIcon />
+        </button>
+
+        <p className="service-modal__eyebrow">Details</p>
+        <h3>{activeService.modalTitle}</h3>
+        <p className="service-modal__text">{activeService.modalText}</p>
+
+        <ul className="service-modal__list">
+          {activeService.bullets.map((bullet) => (
+            <li key={bullet}>{bullet}</li>
+          ))}
+        </ul>
+
+        <a className="button button--primary service-modal__cta" href="#reservation" onClick={handleClose}>
+          Book Now
+        </a>
+      </div>
+    </div>
+  );
 
   return (
     <>
@@ -49,40 +105,7 @@ export default function ServicesSection({ services }) {
         ))}
       </div>
 
-      {activeService ? (
-        <div className="service-modal" role="presentation" onClick={() => setActiveService(null)}>
-          <div
-            aria-modal="true"
-            className="service-modal__panel"
-            onClick={(event) => event.stopPropagation()}
-            role="dialog"
-            tabIndex={-1}
-          >
-            <button
-              aria-label="Close"
-              className="service-modal__close"
-              onClick={() => setActiveService(null)}
-              type="button"
-            >
-              <CloseIcon />
-            </button>
-
-            <p className="service-modal__eyebrow">Details</p>
-            <h3>{activeService.modalTitle}</h3>
-            <p className="service-modal__text">{activeService.modalText}</p>
-
-            <ul className="service-modal__list">
-              {activeService.bullets.map((bullet) => (
-                <li key={bullet}>{bullet}</li>
-              ))}
-            </ul>
-
-            <a className="button button--primary service-modal__cta" href="#reservation" onClick={() => setActiveService(null)}>
-              Book Now
-            </a>
-          </div>
-        </div>
-      ) : null}
+      {isMounted && activeService ? createPortal(modalContent, document.body) : null}
     </>
   );
 }
