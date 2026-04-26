@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from "react";
 import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const WHATSAPP_NUMBER = "5544991065886";
 
@@ -36,14 +37,24 @@ export default function InquiryForm({
 }) {
   const [feedback, setFeedback] = useState("");
   const [isPending, startTransition] = useTransition();
+  const [phoneValues, setPhoneValues] = useState({});
+
+  function handlePhoneChange(name, value) {
+    setPhoneValues(prev => ({ ...prev, [name]: value }));
+  }
 
   function handleSubmit(event) {
     event.preventDefault();
 
     const formData = new FormData(event.currentTarget);
     const fieldValues = fields.map((field) => {
-      const rawValue = String(formData.get(field.name) || "").trim();
-      const value = field.type === "tel" && rawValue && !rawValue.startsWith("+") ? `+${rawValue}` : rawValue;
+      let value = "";
+      if (field.type === "tel") {
+        const rawPhone = phoneValues[field.name] || "";
+        value = rawPhone ? (rawPhone.startsWith("+") ? rawPhone : `+${rawPhone}`) : "";
+      } else {
+        value = String(formData.get(field.name) || "").trim();
+      }
 
       return {
         label: field.label,
@@ -60,6 +71,7 @@ export default function InquiryForm({
 
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
     event.currentTarget.reset();
+    setPhoneValues({});
   }
 
   return (
@@ -125,20 +137,19 @@ export default function InquiryForm({
               {hideLabels ? null : <span>{field.label}</span>}
               {field.type === "tel" ? (
                 <PhoneInput
-                  buttonStyle={{ width: "98px" }}
                   buttonClass="phone-input-lib__button"
-                  containerStyle={{ width: "100%" }}
                   containerClass="phone-input-lib"
                   country="br"
                   countryCodeEditable={false}
                   dropdownClass="phone-input-lib__dropdown"
                   enableSearch={false}
-                  inputStyle={{ width: "100%", height: "58px", paddingLeft: "114px" }}
                   inputClass="phone-input-lib__input"
                   inputProps={{ name: field.name, required: field.required }}
                   preferredCountries={["br", "us", "gb", "ae", "iq", "ca", "ma"]}
                   specialLabel=""
                   placeholder={field.placeholder}
+                  value={phoneValues[field.name] || ""}
+                  onChange={(val) => handlePhoneChange(field.name, val)}
                 />
               ) : (
                 <input

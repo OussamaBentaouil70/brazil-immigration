@@ -5,6 +5,8 @@ import Image from "next/image";
 
 import logoGold from "../assets/images/logo.webp";
 import logoWhite from "../assets/images/logo-white.webp";
+import LanguageSwitcher from "./language-switcher";
+import { useTranslation } from "./translation-context";
 
 function WhatsAppIcon() {
   return (
@@ -19,6 +21,7 @@ export default function SiteHeader({
   whatsappLink,
   whatsappLabel
 }) {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -67,7 +70,7 @@ export default function SiteHeader({
         <div className={`site-header__group ${isMenuOpen ? "site-header__group--open" : ""}`}>
           <nav className="site-nav" aria-label="Primary navigation">
             <div className="site-nav__item site-nav__item--dropdown">
-              <a href="#services" onClick={closeMenu}>Services</a>
+              <a href="#services" onClick={closeMenu}>{t("nav.services")}</a>
               <div className="site-nav__dropdown" role="menu" aria-label="Services menu">
                 {services.map((service) => (
                   <a href={`#${service.id}`} key={service.id} role="menuitem" onClick={closeMenu}>
@@ -76,21 +79,15 @@ export default function SiteHeader({
                 ))}
               </div>
             </div>
-            <a href="#who-we-are" onClick={closeMenu}>Who We Are</a>
-            <a href="#testimonials" onClick={closeMenu}>Testimonials</a>
-            <a href="#faq" onClick={closeMenu}>Questions</a>
-            <a href="#reservation" onClick={closeMenu}>Free Consultation</a>
-            <a href="#contact" onClick={closeMenu}>Contact</a>
+            <a href="#who-we-are" onClick={closeMenu}>{t("nav.whoWeAre")}</a>
+            <a href="#testimonials" onClick={closeMenu}>{t("nav.testimonials")}</a>
+            <a href="#faq" onClick={closeMenu}>{t("nav.questions")}</a>
+            <a href="#reservation" onClick={closeMenu}>{t("nav.freeConsultation")}</a>
+            <a href="#contact" onClick={closeMenu}>{t("nav.contact")}</a>
+            <div className="site-nav__item">
+              <LanguageSwitcher />
+            </div>
           </nav>
-
-          <div className="site-header__actions">
-            <a className="button button--nav-whatsapp" href={whatsappLink} rel="noreferrer" target="_blank" onClick={closeMenu}>
-              <span className="button__icon" aria-hidden="true">
-                <WhatsAppIcon />
-              </span>
-              <span>{whatsappLabel}</span>
-            </a>
-          </div>
         </div>
       </div>
     </header>
