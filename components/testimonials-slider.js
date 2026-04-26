@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslation } from "./translation-context";
 
 export default function TestimonialsSlider({ testimonials, prevLabel = "Previous", nextLabel = "Next" }) {
+  const { locale } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
   const groupedTestimonials = [];
 
@@ -32,12 +34,14 @@ export default function TestimonialsSlider({ testimonials, prevLabel = "Previous
     return () => window.clearInterval(interval);
   }, [total]);
 
+  const translateX = locale === "ar" ? activeIndex * 100 : -activeIndex * 100;
+
   return (
     <div className="testimonial-slider" aria-label="Client testimonials slider">
       <div className="testimonial-slider__viewport">
         <div
           className="testimonial-slider__track"
-          style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+          style={{ transform: `translateX(${translateX}%)` }}
         >
           {groupedTestimonials.map((group, groupIndex) => (
             <div className="testimonial-slide" key={group.map((item) => item.title).join("-") + groupIndex}>

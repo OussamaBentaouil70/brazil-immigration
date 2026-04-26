@@ -4,7 +4,11 @@ import LocaleLayoutClient from "./locale-layout-client";
 
 export const metadata = {
   title: "Immigration Lawyer Brazil - Visas, Residency & Citizenship",
-  description: "Professional legal assistance for Brazilian visas, residency, and citizenship"
+  description: "Professional legal assistance for Brazilian visas, residency, and citizenship",
+  icons: {
+    icon: "https://i.postimg.cc/Kz6Xt8wY/logo.webp",
+    apple: "https://i.postimg.cc/Kz6Xt8wY/logo.webp",
+  },
 };
 
 export default async function LocaleLayout({ children, params }) {

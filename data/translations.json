@@ -195,6 +195,11 @@
       "formTitle": "Contact us",
       "formButton": "Book a consultation"
     },
+    "thankYou": {
+      "title": "Thank You!",
+      "message": "Your request has been received. We will get back to you shortly via email or WhatsApp.",
+      "backHome": "Back to Homepage"
+    },
     "forms": {
       "fullName": "Full name",
       "phone": "Phone",
@@ -349,6 +354,11 @@
       "formTitle": "تواصل معنا",
       "formButton": "احجز استشارة"
     },
+    "thankYou": {
+      "title": "شكراً لك!",
+      "message": "تم استلام طلبك بنجاح. سنتواصل معك قريباً عبر البريد الإلكتروني أو واتساب.",
+      "backHome": "العودة للرئيسية"
+    },
     "forms": {
       "fullName": "الاسم الكامل",
       "phone": "الهاتف",
@@ -502,6 +512,11 @@
       "contactsTitle": "Contacts",
       "formTitle": "Contactez-nous",
       "formButton": "Réserver une consultation"
+    },
+    "thankYou": {
+      "title": "Merci !",
+      "message": "Votre demande a bien été reçue. Nous vous recontacterons rapidement par e-mail ou WhatsApp.",
+      "backHome": "Retour à l'accueil"
     },
     "forms": {
       "fullName": "Nom complet",

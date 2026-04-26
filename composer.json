@@ -1,0 +1,13 @@
+{
+    "name": "oussa/brazil-immigration",
+    "description": "Immigration website",
+    "authors": [
+        {
+            "name": "Oussa"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^7.0",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

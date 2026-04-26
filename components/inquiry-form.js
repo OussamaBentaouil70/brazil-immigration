@@ -3,26 +3,13 @@
 import { useState, useTransition } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { useRouter } from "next/navigation";
+import { useTranslation } from "./translation-context";
+
+import WhatsAppButton from "./whatsapp-button";
 
 const WHATSAPP_NUMBER = "5544991065886";
-
-function buildMessage(formTitle, fieldValues) {
-  const lines = [
-    `Hello, I would like to request assistance regarding ${formTitle.toLowerCase()}.`,
-    "",
-    "Submitted details:"
-  ];
-
-  fieldValues.forEach(({ label, value }) => {
-    if (value) {
-      lines.push(`${label}: ${value}`);
-    }
-  });
-
-  lines.push("", "Please contact me as soon as possible.");
-
-  return lines.join("\n");
-}
+const PHP_BACKEND_URL = "http://localhost/brazil-immigration/send-mail.php";
 
 export default function InquiryForm({
   title,
@@ -38,40 +25,53 @@ export default function InquiryForm({
   const [feedback, setFeedback] = useState("");
   const [isPending, startTransition] = useTransition();
   const [phoneValues, setPhoneValues] = useState({});
+  const router = useRouter();
+  const { locale } = useTranslation();
 
   function handlePhoneChange(name, value) {
     setPhoneValues(prev => ({ ...prev, [name]: value }));
   }
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
 
     const formData = new FormData(event.currentTarget);
-    const fieldValues = fields.map((field) => {
-      let value = "";
+    const payload = {};
+    
+    fields.forEach((field) => {
       if (field.type === "tel") {
         const rawPhone = phoneValues[field.name] || "";
-        value = rawPhone ? (rawPhone.startsWith("+") ? rawPhone : `+${rawPhone}`) : "";
+        payload[field.name] = rawPhone ? (rawPhone.startsWith("+") ? rawPhone : `+${rawPhone}`) : "";
       } else {
-        value = String(formData.get(field.name) || "").trim();
+        payload[field.name] = String(formData.get(field.name) || "").trim();
       }
-
-      return {
-        label: field.label,
-        value
-      };
     });
 
-    const message = buildMessage(title, fieldValues);
-    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    payload["formTitle"] = title;
+    payload["locale"] = locale;
 
-    startTransition(() => {
-      setFeedback("Opening WhatsApp with your information...");
+    startTransition(async () => {
+      setFeedback("Sending your request...");
+      try {
+        const response = await fetch(PHP_BACKEND_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        });
+
+        if (response.ok) {
+          const thankYouUrl = locale === "en" ? "/thank-you" : `/${locale}/thank-you`;
+          router.push(thankYouUrl);
+        } else {
+          setFeedback("Something went wrong. Please try again or contact us via WhatsApp.");
+        }
+      } catch (error) {
+        console.error("Submission error:", error);
+        setFeedback("Network error. Please try again or contact us via WhatsApp.");
+      }
     });
-
-    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
-    event.currentTarget.reset();
-    setPhoneValues({});
   }
 
   return (
@@ -164,9 +164,12 @@ export default function InquiryForm({
         })}
       </div>
 
-      <button className="button button--primary inquiry-form__button" disabled={isPending} type="submit">
-        {buttonLabel}
-      </button>
+      <div className="inquiry-form__actions" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+        <button className="button button--primary inquiry-form__button" disabled={isPending} type="submit">
+          {buttonLabel}
+        </button>
+        <WhatsAppButton />
+      </div>
 
       {showNote ? (
         <p className="inquiry-form__note">

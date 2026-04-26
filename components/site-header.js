@@ -84,9 +84,7 @@ export default function SiteHeader({
             <a href="#faq" onClick={closeMenu}>{t("nav.questions")}</a>
             <a href="#reservation" onClick={closeMenu}>{t("nav.freeConsultation")}</a>
             <a href="#contact" onClick={closeMenu}>{t("nav.contact")}</a>
-            <div className="site-nav__item">
-              <LanguageSwitcher />
-            </div>
+            <LanguageSwitcher />
           </nav>
         </div>
       </div>

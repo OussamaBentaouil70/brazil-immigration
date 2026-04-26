@@ -8,6 +8,7 @@ import ScrollReveal from "@/components/scroll-reveal";
 import ServicesSection from "@/components/services-section";
 import TestimonialsSlider from "@/components/testimonials-slider";
 import { useTranslation } from "@/components/translation-context";
+import WhatsAppButton from "@/components/whatsapp-button";
 
 import attorneyImage from "../../assets/images/image-5.webp";
 import cityImage from "../../assets/images/image-4-scaled.webp";
@@ -164,10 +165,11 @@ export default function LocalePageContent({ params }) {
               <span>{t("who.role")}</span>
             </div>
 
-            <div className="section-copy__cta">
+            <div className="section-copy__cta cta-group">
               <a className="button button--primary" href="#reservation">
                 {t("who.cta")}
               </a>
+              <WhatsAppButton />
             </div>
           </div>
         </div>
@@ -186,6 +188,7 @@ export default function LocalePageContent({ params }) {
             <a className="button button--primary" href="#reservation">
               {t("servicesSection.cta")}
             </a>
+            <WhatsAppButton />
           </div>
         </div>
       </section>
@@ -203,6 +206,7 @@ export default function LocalePageContent({ params }) {
             <a className="button button--primary" href="#reservation">
               {t("testimonialsSection.cta")}
             </a>
+            <WhatsAppButton />
           </div>
         </div>
       </section>
@@ -220,10 +224,11 @@ export default function LocalePageContent({ params }) {
               ))}
             </ul>
 
-            <div className="section-copy__cta">
+            <div className="section-copy__cta cta-group">
               <a className="button button--primary" href="#reservation">
                 {t("bureaucracy.cta")}
               </a>
+              <WhatsAppButton />
             </div>
           </div>
 
@@ -245,7 +250,7 @@ export default function LocalePageContent({ params }) {
 
       <section className="section section--faq" id="faq" data-reveal>
         <div className="container faq-shell">
-          <div className="section-heading section-heading--center">
+          <div className="section-heading section-heading--center section-heading--small">
             <p className="section-label">{t("faqSection.label")}</p>
             <h2>{t("faqSection.title")}</h2>
             <p>{t("faqSection.subtitle")}</p>
@@ -276,6 +281,7 @@ export default function LocalePageContent({ params }) {
             <a className="button button--primary" href="#reservation">
               {t("faqSection.cta")}
             </a>
+            <WhatsAppButton />
           </div>
         </div>
       </section>
