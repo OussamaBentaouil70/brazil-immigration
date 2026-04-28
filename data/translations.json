@@ -212,7 +212,11 @@
       "footerName": "Full Name",
       "footerPhone": "Phone",
       "footerEmail": "Email",
-      "footerMessage": "Message"
+      "footerMessage": "Message",
+      "sendingRequest": "Sending your request...",
+      "submitFailed": "Something went wrong. Please try again or contact us via WhatsApp.",
+      "networkError": "Network error. Please try again or contact us via WhatsApp.",
+      "submittingAria": "Submitting form"
     }
   },
   "ar": {
@@ -408,7 +412,11 @@
       "footerName": "الاسم الكامل",
       "footerPhone": "الهاتف",
       "footerEmail": "البريد الإلكتروني",
-      "footerMessage": "الرسالة"
+      "footerMessage": "الرسالة",
+      "sendingRequest": "جارٍ إرسال طلبك...",
+      "submitFailed": "حدث خطأ ما. حاول مرة أخرى أو تواصل معنا عبر واتساب.",
+      "networkError": "خطأ في الشبكة. حاول مرة أخرى أو تواصل معنا عبر واتساب.",
+      "submittingAria": "جارٍ إرسال النموذج"
     }
   },
   "fr": {
@@ -604,7 +612,11 @@
       "footerName": "Nom complet",
       "footerPhone": "Téléphone",
       "footerEmail": "E-mail",
-      "footerMessage": "Message"
+      "footerMessage": "Message",
+      "sendingRequest": "Envoi de votre demande...",
+      "submitFailed": "Une erreur est survenue. Veuillez réessayer ou nous contacter via WhatsApp.",
+      "networkError": "Erreur réseau. Veuillez réessayer ou nous contacter via WhatsApp.",
+      "submittingAria": "Envoi du formulaire"
     }
   }
 }

@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 import InquiryForm from "@/components/inquiry-form";
 import SiteHeader from "@/components/site-header";
@@ -19,6 +21,8 @@ import logoGold from "../../assets/images/logo.webp";
 import logoWhite from "../../assets/images/logo-white.webp";
 
 const whatsappLink = "https://wa.me/5544991065886";
+const instagramLink = "https://www.instagram.com/erica.caspani/";
+const linkedinLink = "https://www.linkedin.com/in/erica-montarini-caspani-386399150/";
 
 function WhatsAppIcon() {
   return (
@@ -351,6 +355,15 @@ export default function LocalePageContent({ params }) {
               </span>
               <span>+55 (44) 99106-5886</span>
             </a>
+
+            <div className="footer-social-links" aria-label="Social media">
+              <a aria-label="Instagram" className="footer-contact-icon" href={instagramLink} rel="noreferrer" target="_blank">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a aria-label="LinkedIn" className="footer-contact-icon" href={linkedinLink} rel="noreferrer" target="_blank">
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>
+            </div>
           </div>
 
           <div className="footer-form-panel">

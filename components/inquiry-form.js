@@ -1,10 +1,12 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState } from "react";
+import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "./translation-context";
+import logoWhite from "../assets/images/logo-white.webp";
 
 import WhatsAppButton from "./whatsapp-button";
 
@@ -23,10 +25,10 @@ export default function InquiryForm({
   showNote = true
 }) {
   const [feedback, setFeedback] = useState("");
-  const [isPending, startTransition] = useTransition();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [phoneValues, setPhoneValues] = useState({});
   const router = useRouter();
-  const { locale } = useTranslation();
+  const { locale, t } = useTranslation();
 
   function handlePhoneChange(name, value) {
     setPhoneValues(prev => ({ ...prev, [name]: value }));
@@ -34,6 +36,10 @@ export default function InquiryForm({
 
   async function handleSubmit(event) {
     event.preventDefault();
+
+    if (isSubmitting) {
+      return;
+    }
 
     const formData = new FormData(event.currentTarget);
     const payload = {};
@@ -50,28 +56,30 @@ export default function InquiryForm({
     payload["formTitle"] = title;
     payload["locale"] = locale;
 
-    startTransition(async () => {
-      setFeedback("Sending your request...");
-      try {
-        const response = await fetch(PHP_BACKEND_URL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(payload),
-        });
+    setFeedback(t("forms.sendingRequest"));
+    setIsSubmitting(true);
 
-        if (response.ok) {
-          const thankYouUrl = `/${locale}/thank-you`;
-          router.push(thankYouUrl);
-        } else {
-          setFeedback("Something went wrong. Please try again or contact us via WhatsApp.");
-        }
-      } catch (error) {
-        console.error("Submission error:", error);
-        setFeedback("Network error. Please try again or contact us via WhatsApp.");
+    try {
+      const response = await fetch(PHP_BACKEND_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (response.ok) {
+        const thankYouUrl = `/${locale}/thank-you`;
+        router.push(thankYouUrl);
+      } else {
+        setFeedback(t("forms.submitFailed"));
+        setIsSubmitting(false);
       }
-    });
+    } catch (error) {
+      console.error("Submission error:", error);
+      setFeedback(t("forms.networkError"));
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -85,6 +93,17 @@ export default function InquiryForm({
         .join(" ")}
       onSubmit={handleSubmit}
     >
+      {isSubmitting ? (
+        <div className="form-submit-overlay" role="status" aria-live="polite" aria-label={t("forms.submittingAria")}>
+          <div className="form-submit-overlay__spinner" aria-hidden="true">
+            <span className="form-submit-overlay__ring" />
+            <span className="form-submit-overlay__logo-wrap">
+              <Image alt="Logo" className="form-submit-overlay__logo" src={logoWhite} />
+            </span>
+          </div>
+        </div>
+      ) : null}
+
       <div className="inquiry-form__header">
         <h3>{title}</h3>
         {description ? <p>{description}</p> : null}
@@ -165,7 +184,7 @@ export default function InquiryForm({
       </div>
 
       <div className="inquiry-form__actions" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-        <button className="button button--primary inquiry-form__button" disabled={isPending} type="submit">
+        <button className="button button--primary inquiry-form__button" disabled={isSubmitting} type="submit">
           {buttonLabel}
         </button>
         <WhatsAppButton />

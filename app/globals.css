@@ -1057,6 +1057,13 @@ button {
   gap: 12px;
   color: white;
   font-size: 1.02rem;
+  margin-bottom: 20px;
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .footer-contact-icon,
@@ -1078,6 +1085,11 @@ button {
   fill: currentColor;
 }
 
+.footer-contact-icon .svg-inline--fa {
+  width: 18px;
+  height: 18px;
+}
+
 .footer-mini-whatsapp {
   margin-top: 60px;
 }
@@ -1089,6 +1101,82 @@ button {
 .inquiry-form {
   padding: 30px;
   border: 1px solid transparent;
+}
+
+.form-submit-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 220;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(200, 162, 95, 0.2), transparent 35%),
+    rgba(7, 23, 18, 0.82);
+  backdrop-filter: blur(5px);
+}
+
+.form-submit-overlay__spinner {
+  position: relative;
+  width: 118px;
+  height: 118px;
+  display: grid;
+  place-items: center;
+}
+
+.form-submit-overlay__ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.24);
+  border-top-color: #f8e6bf;
+  border-right-color: #d6b26f;
+  animation: formOverlaySpin 0.95s linear infinite;
+}
+
+.form-submit-overlay__logo-wrap {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  animation: formOverlayWave 1.2s ease-in-out infinite;
+  transform-origin: 50% 84%;
+}
+
+.form-submit-overlay__logo {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes formOverlaySpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes formOverlayWave {
+  0% {
+    transform: rotate(0deg) scale(0.96);
+  }
+
+  25% {
+    transform: rotate(7deg) scale(1.03);
+  }
+
+  50% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  75% {
+    transform: rotate(-7deg) scale(1.03);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(0.96);
+  }
 }
 
 .inquiry-form--compact {
@@ -1859,21 +1947,52 @@ button {
   .site-nav__dropdown {
     position: static;
     min-width: 100%;
-    padding: 0;
-    background: transparent;
-    box-shadow: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: linear-gradient(180deg, rgba(15, 74, 59, 0.62), rgba(8, 41, 34, 0.68));
+    box-shadow: 0 12px 30px rgba(3, 18, 14, 0.34);
     opacity: 1;
     visibility: visible;
     transform: none;
     transform-origin: initial;
   }
 
-  .site-header__group--open .site-nav__dropdown a {
-    color: black !important;
+  .site-nav__dropdown a {
+    border: 0;
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 1.02rem;
+    line-height: 1.35;
+    color: rgba(248, 247, 240, 0.95);
+    background: transparent;
+  }
+
+  .site-nav__dropdown a + a {
+    margin-top: 4px;
+  }
+
+  .site-nav__dropdown a:hover,
+  .site-nav__dropdown a:focus-visible {
+    color: white;
+    background: rgba(255, 255, 255, 0.08);
   }
 
   .site-header.is-scrolled .site-nav__dropdown {
-    background: rgba(255, 255, 255, 0.97);
+    border-color: rgba(255, 255, 255, 0.14);
+    background: linear-gradient(180deg, rgba(15, 74, 59, 0.62), rgba(8, 41, 34, 0.68));
+    box-shadow: 0 12px 30px rgba(3, 18, 14, 0.34);
+  }
+
+  .site-header.is-scrolled .site-nav__dropdown a {
+    color: rgba(248, 247, 240, 0.95);
+  }
+
+  .site-header.is-scrolled .site-nav__dropdown a:hover,
+  .site-header.is-scrolled .site-nav__dropdown a:focus-visible {
+    color: white;
+    background: rgba(255, 255, 255, 0.08);
   }
 
   .testimonial-slide {
@@ -1933,7 +2052,10 @@ button {
     min-height: 420px;
   }
 
-  .brand,
+  .brand {
+    max-width: 165px;
+  }
+
   .hero__brand-block {
     max-width: 250px;
   }
