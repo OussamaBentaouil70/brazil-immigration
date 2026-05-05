@@ -9,7 +9,7 @@ export const americanVisaContentEn = {
     lawyer: "Lawyer",
     testimonials: "Testimonials",
     faq: "FAQ",
-    freeConsultation: "Free Consultation",
+    freeConsultation: "Get a Consultation",
     contact: "Contact",
     details: "Details",
     bookNow: "Book Now",
@@ -22,7 +22,7 @@ export const americanVisaContentEn = {
   hero: {
     title: "Immigration Lawyer to the United States – Visas, Green Card & Citizenship",
     subtitle: "We help Brazilians live legally and securely in the United States — fast, strategic, and without unnecessary complications.",
-    primaryCta: "Get Your Free Legal Consultation Now",
+    primaryCta: "Get Your Legal Consultation Now",
     whatsappCta: "Chat With Us Instantly on WhatsApp",
     highlights: [
       "Licensed Immigration Legal Support",
@@ -30,9 +30,9 @@ export const americanVisaContentEn = {
       "Multilingual Support: Portuguese, English, French, Arabic",
       "Fast response within minutes — 100% confidential consultation"
     ],
-    formTitle: "Request your free legal consultation",
+    formTitle: "Request your legal consultation",
     formDescription: "Share your case and we will prepare a direct response for WhatsApp.",
-    formButton: "Get Your Free Legal Consultation Now"
+    formButton: "Get Your Legal Consultation Now"
   },
   who: {
     label: "Meet Your Immigration Lawyer",
@@ -46,12 +46,12 @@ export const americanVisaContentEn = {
     ],
     identityTitle: "Specialized legal support for U.S. immigration matters",
     identitySubtitle: "Strategic guidance for families, professionals, and entrepreneurs",
-    cta: "Get a Free Evaluation of Your Case Now"
+    cta: "Get a Consultation About Your Case Now"
   },
   servicesSection: {
     label: "How Can We Help You?",
     title: "How Can We Help You?",
-    cta: "Get a Free Evaluation of Your Case Now"
+    cta: "Get a Consultation About Your Case Now"
   },
   services: [
     {
@@ -98,7 +98,7 @@ export const americanVisaContentEn = {
   testimonialsSection: {
     label: "Client Results",
     title: "Client Results",
-    cta: "Start Your Free Consultation Now"
+    cta: "Start Your Consultation Now"
   },
   testimonials: [
     { title: "Brazilian Client", quote: "Professional, clear, and efficient. My process was smooth from start to finish." },
@@ -130,7 +130,7 @@ export const americanVisaContentEn = {
     { question: "How can immigration consulting help me after I obtain my visa?", paragraphs: ["Our immigration consulting firm offers comprehensive support even after you obtain your visa. We can assist you in adapting to the new country, guide you on issues related to work, education, health, and other needs, as well as provide guidance on the process of obtaining permanent residency or citizenship, if applicable."] },
     { question: "Is it possible to apply for an immigrant visa while I am in the USA?", paragraphs: ["Yes, it is possible to apply for an immigrant visa while you are in the USA, provided you meet the specific requirements and are within a visa category eligible for change of status within the country. Our team can analyze your situation and help you determine the best option for your case."] },
     { question: "What is the difference between a non-immigrant visa and an immigrant visa?", paragraphs: ["A non-immigrant visa is intended for people who wish to enter the USA temporarily, whether for tourism, study, temporary work, or other specific purposes. An immigrant visa, on the other hand, is for those who wish to move permanently to the USA and obtain permanent residency (Green Card)."] },
-    { question: "How much does it cost to hire an immigration consulting firm?", paragraphs: ["The costs associated with hiring an immigration consulting firm may vary depending on the services requested and the complexity of the case. Our team offers a free initial consultation to discuss your needs and provide an estimate of the fees involved. We will make every effort to offer accessible and transparent services."] },
+    { question: "How much does it cost to hire an immigration consulting firm?", paragraphs: ["The costs associated with hiring an immigration consulting firm may vary depending on the services requested and the complexity of the case. Our team offers an initial consultation to discuss your needs and provide an estimate of the fees involved. We will make every effort to offer accessible and transparent services."] },
     { question: "Can I complete the immigration process on my own, without the help of a consulting firm?", paragraphs: ["While it is possible to complete the immigration process on your own, it is important to keep in mind that the U.S. immigration system can be complex and subject to frequent changes. Hiring an experienced immigration consulting firm can offer significant advantages, such as specialized guidance, reduced errors, time savings, and increased chances of success. Our team is prepared to help you at every stage of the process and provide reliable support."] },
     { question: "What is the average processing time for an immigrant visa?", paragraphs: ["The average processing time for an immigrant visa varies depending on the type of visa and the individual processing of the case. In general, processing times can range from a few months to over a year. It is important to be aware that processing times can be influenced by various factors, such as demand, case complexity, and potential bureaucratic delays."] },
     { question: "What are the financial requirements to obtain an immigrant visa?", paragraphs: ["The financial requirements to obtain an immigrant visa also depend on the type of visa you are applying for. Some visas may require proof of sufficient financial resources to support yourself in the USA, while others may require significant investments. It is important to consult the specific guidelines for the desired visa or contact us for detailed information about financial requirements."] },
@@ -150,14 +150,14 @@ export const americanVisaContentEn = {
     label: "Don’t Delay Your American Dream - Start Today",
     title: "Don’t Delay Your American Dream — Start Today",
     text: "Get expert legal guidance and take the next step toward living in the United States with confidence.",
-    primaryCta: "Get Your Free Legal Consultation Now",
+    primaryCta: "Get Your Legal Consultation Now",
     whatsappCta: "Chat With Us Instantly on WhatsApp",
     highlights: ["No obligation", "Fast response", "100% confidential"]
   },
   reservation: {
-    formTitle: "Request your free legal consultation",
+    formTitle: "Request your legal consultation",
     formDescription: "Share your case and we will follow up with a tailored legal response.",
-    formButton: "Get Your Free Legal Consultation Now"
+    formButton: "Get Your Legal Consultation Now"
   },
   footer: {
     about: "Specialized immigration support for Brazilians who want to live, work, and build a secure future in the United States.",
@@ -195,7 +195,7 @@ export const americanVisaContentPt = {
     lawyer: "Advogada",
     testimonials: "Depoimentos",
     faq: "FAQ",
-    freeConsultation: "Consulta Gratuita",
+    freeConsultation: "Agende uma Consulta",
     contact: "Contato",
     details: "Detalhes",
     bookNow: "Agendar agora",
@@ -208,7 +208,7 @@ export const americanVisaContentPt = {
   hero: {
     title: "Advocacia de Imigração para os Estados Unidos – Vistos, Green Card e Cidadania",
     subtitle: "Ajudamos brasileiros a viver legalmente e com segurança nos Estados Unidos — de forma rápida, estratégica e sem complicações.",
-    primaryCta: "Agende sua consulta jurídica gratuita agora",
+    primaryCta: "Agende sua consulta jurídica agora",
     whatsappCta: "Fale conosco pelo WhatsApp imediatamente",
     highlights: [
       "Suporte jurídico especializado em imigração para os EUA",
@@ -216,9 +216,9 @@ export const americanVisaContentPt = {
       "Atendimento multilíngue: português, inglês, francês e árabe",
       "Resposta rápida em minutos — consulta 100% confidencial"
     ],
-    formTitle: "Agende sua consulta jurídica gratuita",
+    formTitle: "Agende sua consulta jurídica",
     formDescription: "Compartilhe seu caso e nós preparamos uma resposta direta para o WhatsApp.",
-    formButton: "Agende sua consulta jurídica gratuita agora"
+    formButton: "Agende sua consulta jurídica agora"
   },
   who: {
     label: "Conheça sua advogada de imigração",
@@ -232,12 +232,12 @@ export const americanVisaContentPt = {
     ],
     identityTitle: "Suporte jurídico especializado em imigração para os EUA",
     identitySubtitle: "Orientação estratégica para famílias, profissionais e empreendedores",
-    cta: "Receba uma avaliação gratuita do seu caso agora"
+    cta: "Receba uma avaliação do seu caso agora"
   },
   servicesSection: {
     label: "Como podemos te ajudar?",
     title: "Como podemos te ajudar?",
-    cta: "Receba uma avaliação gratuita do seu caso agora"
+    cta: "Receba uma avaliação do seu caso agora"
   },
   services: [
     {
@@ -284,7 +284,7 @@ export const americanVisaContentPt = {
   testimonialsSection: {
     label: "Resultados de Clientes",
     title: "Resultados de Clientes",
-    cta: "Agende sua consulta gratuita agora"
+    cta: "Agende sua consulta agora"
   },
   testimonials: [
     { title: "Cliente brasileiro", quote: "Processo claro, rápido e sem complicações. Excelente atendimento." },
@@ -316,7 +316,7 @@ export const americanVisaContentPt = {
     { question: "Como a consultoria de imigração pode me ajudar após eu obter o visto?", paragraphs: ["Nossa consultoria de imigração oferece suporte abrangente mesmo após a obtenção do visto. Podemos auxiliá-lo na adaptação ao novo país, orientá-lo sobre questões relacionadas a trabalho, educação, saúde e outras necessidades, além de fornecer orientações sobre o processo de obtenção de residência permanente ou cidadania, se for o caso."] },
     { question: "É possível solicitar um visto de imigrante enquanto estou nos EUA?", paragraphs: ["Sim, é possível solicitar um visto de imigrante enquanto você está nos EUA, desde que atenda aos requisitos específicos e esteja dentro de uma categoria de visto elegível para a mudança de status dentro do país. Nossa equipe pode analisar sua situação e ajudá-lo a determinar a melhor opção para sua situação."] },
     { question: "Qual é a diferença entre um visto de não imigrante e um visto de imigrante?", paragraphs: ["Um visto de não imigrante é destinado a pessoas que desejam entrar nos EUA temporariamente, seja para turismo, estudo, trabalho temporário ou outros propósitos específicos. Já um visto de imigrante é para aqueles que desejam se mudar permanentemente para os EUA e obter a residência permanente (Green Card)."] },
-    { question: "Quanto custa contratar uma consultoria de imigração?", paragraphs: ["Os custos associados à contratação de uma consultoria de imigração podem variar dependendo dos serviços solicitados e da complexidade do caso. Nossa equipe oferece uma consulta inicial gratuita para discutir suas necessidades e fornecer uma estimativa dos honorários envolvidos. Faremos todos os esforços para oferecer serviços acessíveis e transparentes."] },
+    { question: "Quanto custa contratar uma consultoria de imigração?", paragraphs: ["Os custos associados à contratação de uma consultoria de imigração podem variar dependendo dos serviços solicitados e da complexidade do caso. Nossa equipe oferece uma consulta inicial para discutir suas necessidades e fornecer uma estimativa dos honorários envolvidos. Faremos todos os esforços para oferecer serviços acessíveis e transparentes."] },
     { question: "Posso realizar o processo de imigração por conta própria, sem a ajuda de uma consultoria?", paragraphs: ["Embora seja possível realizar o processo de imigração por conta própria, é importante ter em mente que o sistema de imigração dos EUA pode ser complexo e sujeito a mudanças frequentes. Contratar uma consultoria de imigração experiente pode oferecer vantagens significativas, como orientação especializada, redução de erros, economia de tempo e aumento das chances de sucesso. Nossa equipe está preparada para ajudá-lo em todas as etapas do processo e fornecer suporte confiável."] },
     { question: "Qual é o prazo médio para obter um visto de imigração?", paragraphs: ["O prazo médio para obter um visto de imigração varia de acordo com o tipo de visto e o processamento individual do caso. Em geral, os prazos podem variar de alguns meses a mais de um ano. É importante estar ciente de que os tempos de processamento podem ser influenciados por diversos fatores, como a demanda, a complexidade do caso e eventuais atrasos burocráticos."] },
     { question: "Quais são os requisitos financeiros para obter um visto de imigração?", paragraphs: ["Os requisitos financeiros para obter um visto de imigração também dependem do tipo de visto que você está solicitando. Alguns vistos podem exigir comprovação de recursos financeiros suficientes para se sustentar nos EUA, enquanto outros podem exigir investimentos significativos. É importante consultar as diretrizes específicas do visto desejado ou entrar em contato conosco para obter informações detalhadas sobre os requisitos financeiros."] },
@@ -336,14 +336,14 @@ export const americanVisaContentPt = {
     label: "Não adie seu sonho americano — comece hoje",
     title: "Não adie seu sonho americano — comece hoje",
     text: "Receba orientação jurídica confiável e dê o próximo passo para viver nos Estados Unidos com segurança.",
-    primaryCta: "Agende sua consulta jurídica gratuita agora",
+    primaryCta: "Agende sua consulta jurídica agora",
     whatsappCta: "Fale conosco pelo WhatsApp",
     highlights: ["Sem compromisso", "Resposta rápida", "100% confidencial"]
   },
   reservation: {
-    formTitle: "Agende sua consulta jurídica gratuita",
+    formTitle: "Agende sua consulta jurídica",
     formDescription: "Compartilhe seu caso e nós seguimos com uma resposta jurídica personalizada.",
-    formButton: "Agende sua consulta jurídica gratuita agora"
+    formButton: "Agende sua consulta jurídica agora"
   },
   footer: {
     about: "Suporte especializado em imigração para brasileiros que querem viver, trabalhar e construir um futuro seguro nos Estados Unidos.",

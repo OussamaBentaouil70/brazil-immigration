@@ -5,7 +5,7 @@
       "whoWeAre": "Who We Are",
       "testimonials": "Testimonials",
       "questions": "Questions",
-      "freeConsultation": "Free Consultation",
+      "freeConsultation": "Get a Consultation",
       "contact": "Contact",
       "language": "Language",
       "whatsapp": "WhatsApp",
@@ -18,7 +18,7 @@
     "hero": {
       "title": "Immigration Lawyer to Brazil - Visas, Residency & Citizenship",
       "subtitle": "We help you live legally and safely in Brazil - fast, secure, and without complications.",
-      "ctaPrimary": "Get Your Free Legal Consultation Now",
+      "ctaPrimary": "Get Your Legal Consultation Now",
       "ctaWhatsapp": "Chat With Us Instantly on WhatsApp",
       "highlights": [
         "Licensed Brazilian Attorney (OAB/PR 58.420)",
@@ -26,7 +26,7 @@
         "Multilingual support: English, Arabic, Portuguese",
         "Fast response within minutes - 100% confidential consultation"
       ],
-      "formTitle": "Request your free legal consultation",
+      "formTitle": "Request your legal consultation",
       "formDescription": "Share your case and open a WhatsApp conversation with your details already prepared.",
       "formButton": "Get legal assistance"
     },
@@ -42,12 +42,12 @@
       ],
       "name": "Erica Montarini Gaspani",
       "role": "Immigration Lawyer to Brazil",
-      "cta": "Speak With a Specialized Lawyer for Free"
+      "cta": "Speak With a Specialized Lawyer"
     },
     "servicesSection": {
       "label": "How Can We Help You?",
       "title": "How Can We Help You?",
-      "cta": "Get a Free Evaluation of Your Case",
+      "cta": "Get an Evaluation of Your Case",
       "modal": {
         "viewDetails": "View details",
         "details": "Service Details",
@@ -108,7 +108,7 @@
     "testimonialsSection": {
       "label": "What Our Clients Say",
       "title": "What Our Clients Say",
-      "cta": "Start Your Free Consultation Now",
+      "cta": "Start Your Consultation Now",
       "prev": "Previous",
       "next": "Next"
     },
@@ -130,7 +130,7 @@
         "Federal Police registration",
         "Full document preparation"
       ],
-      "cta": "Start Your Legal Process Today - Free Consultation"
+      "cta": "Start Your Legal Process Today - Consultation"
     },
     "faqSection": {
       "label": "Questions/answers:",
@@ -180,12 +180,12 @@
       "label": "Don't Delay Your Future - Start Today",
       "title": "Don't Delay Your Future - Start Today",
       "text": "Get trusted legal guidance and begin your life in Brazil with confidence.",
-      "primary": "Get Your Free Legal Consultation Now",
+      "primary": "Get Your Legal Consultation Now",
       "whatsapp": "Chat With Us Instantly on WhatsApp",
       "highlights": ["No obligation", "Fast response", "100% confidential"]
     },
     "reservation": {
-      "formTitle": "Request your free legal consultation",
+      "formTitle": "Request your legal consultation",
       "formDescription": "Share your case and open a WhatsApp conversation with your details already prepared.",
       "formButton": "Get legal assistance"
     },
@@ -225,7 +225,7 @@
       "whoWeAre": "من نحن",
       "testimonials": "آراء العملاء",
       "questions": "الأسئلة",
-      "freeConsultation": "استشارة مجانية",
+      "freeConsultation": "احصل على استشارة",
       "contact": "تواصل",
       "language": "اللغة",
       "whatsapp": "واتساب",
@@ -238,7 +238,7 @@
     "hero": {
       "title": "محامية هجرة إلى البرازيل – تأشيرات، إقامة، وجنسية",
       "subtitle": "نساعدك على العيش بشكل قانوني وآمن في البرازيل — بسرعة، وضمان، وبدون تعقيدات",
-      "ctaPrimary": "احصل على استشارة قانونية مجانية الآن",
+      "ctaPrimary": "احصل على استشارة قانونية الآن",
       "ctaWhatsapp": "تحدث معنا فوراً عبر واتساب",
       "highlights": [
         "محامية مرخّصة في البرازيل (OAB/PR 58.420)",
@@ -246,7 +246,7 @@
         "نتحدث العربية، الإنجليزية، والبرتغالية",
         "رد سريع خلال دقائق — استشارة سرية %100"
       ],
-      "formTitle": "اطلب استشارتك القانونية المجانية",
+      "formTitle": "اطلب استشارتك القانونية",
       "formDescription": "شارك تفاصيل حالتك وسنجهز رسالة واتساب مباشرة.",
       "formButton": "احصل على المساعدة القانونية"
     },
@@ -262,12 +262,12 @@
       ],
       "name": "إريكا مونتاريني غاسباني",
       "role": "محامية هجرة إلى البرازيل",
-      "cta": "تواصل الآن مع محامية متخصصة مجاناً"
+      "cta": "تواصل الآن مع محامية متخصصة"
     },
     "servicesSection": {
       "label": "كيف يمكننا مساعدتك؟",
       "title": "كيف يمكننا مساعدتك؟",
-      "cta": "احصل على تقييم مجاني لحالتك الآن",
+      "cta": "احصل على تقييم لحالتك الآن",
       "modal": {
         "viewDetails": "عرض التفاصيل",
         "details": "تفاصيل الخدمة",
@@ -328,7 +328,7 @@
     "testimonialsSection": {
       "label": "ماذا يقول عملاؤنا؟",
       "title": "ماذا يقول عملاؤنا؟",
-      "cta": "ابدأ استشارتك المجانية الآن",
+      "cta": "ابدأ استشارتك الآن",
       "prev": "السابق",
       "next": "التالي"
     },
@@ -350,7 +350,7 @@
         "التسجيل لدى الشرطة الفيدرالية",
         "تجهيز جميع الوثائق"
       ],
-      "cta": "ابدأ إجراءاتك القانونية اليوم مجاناً"
+      "cta": "ابدأ إجراءاتك القانونية اليوم"
     },
     "faqSection": {
       "label": "الأسئلة الشائعة",
@@ -380,12 +380,12 @@
       "label": "لا تؤجل مستقبلك — ابدأ الآن",
       "title": "لا تؤجل مستقبلك — ابدأ الآن",
       "text": "احصل على استشارة قانونية موثوقة وابدأ حياتك في البرازيل بثقة",
-      "primary": "احصل على استشارة قانونية مجانية الآن",
+      "primary": "احصل على استشارة قانونية الآن",
       "whatsapp": "تحدث معنا فوراً عبر واتساب",
       "highlights": ["بدون التزام", "رد سريع", "سرية تامة"]
     },
     "reservation": {
-      "formTitle": "اطلب استشارتك القانونية المجانية",
+      "formTitle": "اطلب استشارتك القانونية",
       "formDescription": "شارك تفاصيل حالتك وسنجهز رسالة واتساب مباشرة.",
       "formButton": "احصل على المساعدة القانونية"
     },
@@ -425,7 +425,7 @@
       "whoWeAre": "Qui sommes-nous",
       "testimonials": "Témoignages",
       "questions": "Questions",
-      "freeConsultation": "Consultation gratuite",
+      "freeConsultation": "Obtenez une consultation",
       "contact": "Contact",
       "language": "Langue",
       "whatsapp": "WhatsApp",
@@ -438,7 +438,7 @@
     "hero": {
       "title": "Avocate en Immigration au Brésil – Visas, Résidence & Nationalité",
       "subtitle": "Nous vous aidons à vivre légalement et en toute sécurité au Brésil — rapidement, sans complications et avec un accompagnement complet.",
-      "ctaPrimary": "Obtenez votre consultation juridique gratuite dès maintenant",
+      "ctaPrimary": "Obtenez votre consultation juridique dès maintenant",
       "ctaWhatsapp": "Contactez-nous instantanément via WhatsApp",
       "highlights": [
         "Avocate inscrite au Barreau du Brésil (OAB/PR 58.420)",
@@ -446,7 +446,7 @@
         "Accompagnement multilingue : français, anglais, arabe, portugais",
         "Réponse rapide en quelques minutes — Consultation 100% confidentielle"
       ],
-      "formTitle": "Demandez votre consultation juridique gratuite",
+      "formTitle": "Demandez votre consultation juridique",
       "formDescription": "Partagez votre dossier et ouvrez une conversation WhatsApp déjà préparée.",
       "formButton": "Obtenir une assistance juridique"
     },
@@ -462,12 +462,12 @@
       ],
       "name": "Erica Montarini Gaspani",
       "role": "Avocate en immigration au Brésil",
-      "cta": "Parlez gratuitement avec une avocate spécialisée"
+      "cta": "Parlez avec une avocate spécialisée"
     },
     "servicesSection": {
       "label": "Comment pouvons-nous vous aider ?",
       "title": "Comment pouvons-nous vous aider ?",
-      "cta": "Obtenez une évaluation gratuite de votre dossier",
+      "cta": "Obtenez une évaluation de votre dossier",
       "modal": {
         "viewDetails": "Voir les détails",
         "details": "Détails du service",
@@ -528,7 +528,7 @@
     "testimonialsSection": {
       "label": "Ce que disent nos clients",
       "title": "Ce que disent nos clients",
-      "cta": "Démarrez votre consultation gratuite dès maintenant",
+      "cta": "Démarrez votre consultation dès maintenant",
       "prev": "Précédent",
       "next": "Suivant"
     },
@@ -550,7 +550,7 @@
         "Enregistrement auprès de la Police Fédérale",
         "Préparation complète de vos documents"
       ],
-      "cta": "Lancez vos démarches dès aujourd’hui — consultation gratuite"
+      "cta": "Lancez vos démarches dès aujourd’hui — consultation"
     },
     "faqSection": {
       "label": "QUESTIONS FRÉQUENTES",
@@ -580,12 +580,12 @@
       "label": "N’attendez pas pour construire votre avenir — commencez dès aujourd’hui",
       "title": "N’attendez pas pour construire votre avenir — commencez dès aujourd’hui",
       "text": "Bénéficiez d’un accompagnement juridique fiable et démarrez votre nouvelle vie au Brésil en toute confiance.",
-      "primary": "Obtenez votre consultation juridique gratuite dès maintenant",
+      "primary": "Obtenez votre consultation juridique dès maintenant",
       "whatsapp": "Contactez-nous immédiatement via WhatsApp",
       "highlights": ["Sans engagement", "Réponse rapide", "100% confidentiel"]
     },
     "reservation": {
-      "formTitle": "Demandez votre consultation juridique gratuite",
+      "formTitle": "Demandez votre consultation juridique",
       "formDescription": "Partagez votre dossier et ouvrez une conversation WhatsApp déjà préparée.",
       "formButton": "Obtenir une assistance juridique"
     },

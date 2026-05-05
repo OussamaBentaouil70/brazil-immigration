@@ -188,12 +188,6 @@ function AmericanVisaHeader({ copy }) {
             <a href="#reservation" onClick={closeMenu}>{copy.labels.freeConsultation}</a>
             <a href="#contact" onClick={closeMenu}>{copy.labels.contact}</a>
             <AmericanVisaLanguageDropdown copy={copy} />
-            <a className="button button--nav-whatsapp" href={whatsappLink} rel="noreferrer" target="_blank">
-              <span className="button__icon" aria-hidden="true">
-                <WhatsAppIcon />
-              </span>
-              {copy.labels.whatsapp}
-            </a>
           </nav>
         </div>
       </div>
