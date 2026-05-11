@@ -2,7 +2,7 @@ export const whatsappLink = "https://wa.me/5544991065886";
 
 export const americanVisaContentEn = {
   language: "en",
-  thankYouPath: "/thank-you",
+  thankYouPath: "/american_visa/thank-you",
   labels: {
     whatsapp: "WhatsApp",
     services: "Services",
@@ -188,7 +188,7 @@ export const americanVisaContentEn = {
 
 export const americanVisaContentPt = {
   language: "pt",
-  thankYouPath: "/pt/thank-you",
+  thankYouPath: "/american_visa/pt/thank-you",
   labels: {
     whatsapp: "WhatsApp",
     services: "Serviços",
